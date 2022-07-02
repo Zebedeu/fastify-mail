@@ -15,6 +15,10 @@ this plugin is an update of [fastify-nodemailer-plugin](https://www.npmjs.com/pa
 npm i fastify-mail --save
 ```
 
+```
+yarn add fastify-mail
+```
+
 ## Versions
 
 The plugin supports the following `Fastify` and `Nodemailer` versions. Please refer to corresponding branch in PR and issues.
