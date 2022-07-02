@@ -21,7 +21,7 @@ The plugin supports the following `Fastify` and `Nodemailer` versions. Please re
 
 version | branch | fastify | nodemailer | End of support
 --------|--------|---------|------------|---------------  
-1.x | [maain](https://github.com/Zebedeu/fastify-mail-2 | 4.x | 6.x |   
+1.x | [maain](https://github.com/Zebedeu/fastify-mail | 4.x | 6.x |   
 
 ## Usage
 Add it to you project with `register` and you are done!
