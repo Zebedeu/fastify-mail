@@ -4,7 +4,7 @@
   "description": "Nodemailer for Fastify",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Eren BALCI",
+  "author": "Marcio Zebedeu",
   "license": "MIT",
   "private": false,
   "engines": {

@@ -63,7 +63,7 @@ if (require.main === module) {
       level: "info",
     },
   });
-  fastify.listen(3000, (err) => {
+  fastify.listen({port: 3000}, (err) => {
     if (err) throw err;
   });
 }
