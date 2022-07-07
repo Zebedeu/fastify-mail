@@ -8,8 +8,6 @@ Fastify nodemailer plugin, with this you can share the same nodemailer transport
 
 Under the hood the it wraps [nodemailer](https://github.com/nodemailer/nodemailer) transporter and the options that you pass to `register` will be passed to the transporter. For configuration/usage details please check the [nodemailer documentation](https://nodemailer.com/usage/).
 
-this plugin is an update of [fastify-nodemailer-plugin](https://www.npmjs.com/package/fastify-nodemailer-plugin)
-
 ## Install
 ```
 npm i fastify-mail --save
