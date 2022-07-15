@@ -64,6 +64,27 @@ fastify.listen(3000, err => {
   console.log(`server listening on ${fastify.server.address().port}`)
 })
 ```
+
+### New: You can also access the transporter via `reply.nodemailer.sendMail()`.
+
+```js
+fastify.get('/sendmail/:email', (req, reply, next) => {
+  let recipient = req.params.email
+
+  reply.nodemailer.sendMail({
+    from: 'sender@example.com',
+    to: recipient,
+    subject: 'foo',
+    text: 'bar'
+  }, (err, info) => {
+    if (err) next(err)
+    reply.send({
+      messageId: info.messageId
+    })
+  })
+})
+
+```
 ## Custom transports
 
 By default, passing an object as options to the plugin will configure nodemailer's main transport (SMTP).

@@ -17,7 +17,7 @@ const nodeMailerPlugin: FastifyPluginCallback<FastifyNodemailerOptions> = (
 
   fastify
     .decorate("nodemailer", nodemailer.createTransport(options))
-    .decorateRequest("nodemailer", { getter: () => fastify.nodemailer })
+    .decorateReply("nodemailer", { getter: () => fastify.nodemailer })
     .addHook("onClose", (fastify, done) => {
       fastify.nodemailer.close();
       done();

@@ -31,7 +31,7 @@ const build = (options) => {
       const { nodemailer } = fastify;
       const recipient = req.params.email;
 
-      nodemailer.sendMail(
+      reply.sendMail(
         {
           from: "sender@example.com",
           to: recipient,
@@ -63,7 +63,7 @@ if (require.main === module) {
       level: "info",
     },
   });
-  fastify.listen({port: 3000}, (err) => {
+  fastify.listen({ port: 3000 }, (err) => {
     if (err) throw err;
   });
 }
