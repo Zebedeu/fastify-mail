@@ -23,6 +23,7 @@ The plugin supports the following `Fastify` and `Nodemailer` versions. Please re
 
 version | branch | fastify | nodemailer | End of support
 --------|--------|---------|------------|---------------  
+1.8 | [maain](https://github.com/Zebedeu/fastify-mail | 5.x | 6.x |   
 1.x | [maain](https://github.com/Zebedeu/fastify-mail | 4.x | 6.x |   
 
 ## Usage
